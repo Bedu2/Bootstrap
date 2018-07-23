@@ -12,54 +12,90 @@
     <title>Pagina3</title>
   </head>
   <body>
+    <div class="container">
     <!-- header -->
-    <section id="header" >
-      <div class="header-container">
-        <div class="logo">
-          logo
+    <section id="header" class="container mb-4">
+      <div class="header-container row">
+        <div class="logo col-2">
+          <img src="http://brandmark.io/logo-rank/random/pepsi.png" alt="Logotipo" class="rounded-circle">
         </div>
-        <div class="titulo-container">
-          <div class="titulo">
-            titulo
+        <div class="titulo-container row col-10 d-flex align-content-between flex-wrap"">
+          <div class="titulo col-12 align-self-star d-flex align-items-start p-2 bd-highlight">
+            IT´S A JEEP THING
           </div>
-          <div class="breadcrumb">
-            home bread crumb
-          </div>
-          <div class="search-container">
-            buscador
-          </div>
-          
-        </div>
         
-      </div>
-      
+          <nav class="flex-fill navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Bread</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Crums</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div> 
     </section>
 <!-- /header -->
 
 <!-- body -->
 
-    <section id="contenido">
-      <div class="menu-container">
+    <section id="contenido" class="container row">
+      <div class="menu-container col-2">
         <h2>Productos</h2>
         <div class="scroll-down">
-          productos varios
-          productos varios
+          <h4>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</h4>
         </div>
       </div>
+      <div class="productos-container pl-1 pr-1 ml-4 mr-4 col-7">
 
-      <div class="productos-container">
-        <div class="tabs-container">
-          xxxx
+        <div class="tabs-container m-3 d-flex align-items-around">
+          <div class="image-container row w-50%">
+            <h3 class="producto col-6">Producto</h3>
+            <img src="http://brandmark.io/logo-rank/random/pepsi.png" alt="Producto" class="w-25% col-6 imagen-psi">
+          </div>
         </div>
-        <div class="descripcion-productos">
-          xxxxx
+
+         <div class="tabs-container m-3 d-flex align-items-around">
+          <div class="image-container row w-50%">
+            <h3 class="producto col-6">Producto</h3>
+            <img src="http://brandmark.io/logo-rank/random/pepsi.png" alt="Producto" class="w-25% col-6 imagen-psi">
+          </div>
         </div>
+
+        <div class="tabs-container m-3 d-flex align-items-around">
+          <div class="image-container row w-50%">
+            <h3 class="producto col-6">Producto</h3>
+            <img src="http://brandmark.io/logo-rank/random/pepsi.png" alt="Producto" class="w-25% col-6 imagen-psi">
+          </div>
+        </div>
+
+        <div class="tabs-container m-3 d-flex align-items-around">
+          <div class="image-container row w-50%">
+            <h3 class="producto col-6">Producto</h3>
+            <img src="http://brandmark.io/logo-rank/random/pepsi.png" alt="Producto" class="w-25% col-6 imagen-psi">
+          </div>
+        </div>
+
       </div>
-      <div class="calendario-container">
-        <div class="calendario">
+      <div class="calendario-container col-2">
+        <div class="calendario  mt-2 mb-3">
           calendario
         </div>
-        <div class="eventos">
+        <div class="eventos mt-3">
           eventos
         </div>
       </div>
@@ -69,8 +105,8 @@
 
 <!-- footer -->
 
-    <section id="footer">
-      <h4>footer</h4>
+    <section id="footer" class="container mt-4 d-flex justify-content-center p-2 bd-highlight">
+      <p>footer</p>
       
     </section>
 
@@ -83,5 +119,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
